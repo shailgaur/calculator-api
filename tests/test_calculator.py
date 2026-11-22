@@ -12,7 +12,7 @@ def test_addition():
     )
 
     assert response.status_code == 200
-    assert response.json()["result"] == 999
+    assert response.json()["result"] == 15
 
 
 def test_subtraction():
