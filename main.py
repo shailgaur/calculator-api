@@ -9,7 +9,7 @@ app = FastAPI()
 # Home endpoint
 @app.get("/")
 def home():
-    return {"message": "Calculator API is running"}
+    return {"message": "Calculator API is running - CI/CD demo"}
 
 
 # Existing addition endpoint
@@ -52,3 +52,6 @@ def calculate(request: CalculatorRequest):
         "operation": request.operation,
         "result": result
     }
+
+
+
